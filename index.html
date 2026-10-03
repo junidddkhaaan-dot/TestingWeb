@@ -225,6 +225,7 @@
       transition:transform 0.3s,box-shadow 0.3s,border-color 0.3s;
       opacity:0;transform:translateY(24px);
       will-change:transform;
+      display:flex;flex-direction:column;
     }
     .product-card:hover{
       transform:translateY(-5px);
@@ -256,8 +257,10 @@
       font-size:clamp(1.1rem,3vw,1.3rem);
       font-weight:400;color:var(--cream);margin-bottom:5px;
     }
-    .product-desc{font-size:clamp(0.7rem,1.8vw,0.75rem);color:var(--muted);margin-bottom:14px;line-height:1.7}
-    .product-footer{display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .product-desc{font-size:clamp(0.7rem,1.8vw,0.75rem);color:var(--muted);margin-bottom:14px;line-height:1.7;min-height:52px}
+    .product-body{padding:clamp(14px,4vw,20px);display:flex;flex-direction:column;flex:1}
+    .product-name{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,3vw,1.3rem);font-weight:400;color:var(--cream);margin-bottom:5px}
+    .product-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
     .product-price{font-size:clamp(0.9rem,2.5vw,1.05rem);font-weight:600;color:var(--gold)}
     .add-btn{
       background:var(--gold);color:#000;
@@ -675,8 +678,8 @@
     {id:1,name:"Royal Oud",desc:"Deep woody oud — powerful & long-lasting",price:1299,badge:"Best Seller",img:"https://i.ibb.co/Mxm3KCtB/atar.jpg"},
     {id:2,name:"Classic Attar",desc:"Timeless musk blend for everyday elegance",price:999,badge:"Popular",img:"https://i.ibb.co/84SmjSHV/atar1.jpg"},
     {id:3,name:"Signature Musk",desc:"Soft rose & amber — a confident presence",price:1099,badge:"New",img:"https://i.ibb.co/36Q6G35/atar2.jpg"},
-    {id:4,name:"Amber Nights",desc:"Warm amber with a hint of vanilla musk",price:1150,badge:"",img:"https://i.ibb.co/Mxm3KCtB/atar.jpg"},
-    {id:5,name:"Jasmine Pearl",desc:"Delicate jasmine — fresh & feminine",price:899,badge:"",img:"https://i.ibb.co/84SmjSHV/atar1.jpg"},
+    {id:4,name:"Amber Nights",desc:"Warm amber with a hint of vanilla musk",price:1150,badge:"",img:"https://i.ibb.co/36Q6G35/atar2.jpg"},
+    {id:5,name:"Jasmine Pearl",desc:"Delicate jasmine — fresh & feminine",price:899,badge:"",img:"https://i.ibb.co/Mxm3KCtB/atar.jpg"},
   ];
 
   let cart = {};
